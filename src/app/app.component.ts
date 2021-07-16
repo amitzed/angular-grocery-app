@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'grocery store inc.';
+  menuViewSelected = true;
+  cartViewSelected = false;
+
+  public onViewSelected() {
+    this.menuViewSelected = !this.menuViewSelected;
+    this.cartViewSelected = !this.cartViewSelected;
+  }
 }

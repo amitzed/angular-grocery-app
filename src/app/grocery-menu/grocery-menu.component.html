@@ -8,6 +8,7 @@
 
     <div
     class="items-container_item-wrapper"
+    [class.lightBG]="item.color === 'gold' || item.color === 'chartreuse'"
     [ngStyle]="{'background': getColor(item)}"
     >
       <p>ID: {{item.id}}</p>

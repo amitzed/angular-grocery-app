@@ -1,4 +1,8 @@
 .list-container {
+  &--deleteBtn:hover {
+    background: crimson;
+  }
+
   &--item {
     margin: 0.5em auto;
     text-transform: capitalize;

@@ -1,8 +1,14 @@
 <div class="grocery-app">
   <h1>{{title | titlecase}}</h1>
-  <nav>
-    <button routerLink="/menu">Menu Items</button>
-    <button routerLink="/my-list">Checkout Items</button>
+  <nav (click)="onViewSelected()">
+    <button
+      routerLink="/menu"
+      [class.viewSelected]="menuViewSelected"
+    >Menu Items</button>
+    <button
+      routerLink="/my-list"
+      [class.viewSelected]="cartViewSelected"
+    >Checkout Items</button>
   </nav>
   <router-outlet></router-outlet>
 </div>

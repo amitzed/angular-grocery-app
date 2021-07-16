@@ -9,8 +9,8 @@
     border-radius: 10px;
   }
 
-  .tester {
-    background: blue;
+  .lightBG {
+    color: #000;
   }
 
   &_item-wrapper {
@@ -27,7 +27,7 @@
     transition: all 0.3s linear;
 
     &:hover {
-      // background: coral;
+      background: coral;
       color: #000;
       font-weight: bold;
       transform: scale(1.02);
