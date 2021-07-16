@@ -2,17 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // width: 80%;
-  // margin: auto;
   text-align: center;
+
+  .itemSelected {
+    background: slateblue;
+    border-radius: 10px;
+  }
 
   &_item-wrapper {
     background: grey;
     color: #fff;
+    font-size: 1.1em;
+    text-transform: capitalize;
     height: 150px;
     width: 150px;
     border: 2px solid black;
     margin: 1em;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s linear;
 

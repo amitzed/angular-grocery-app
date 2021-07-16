@@ -10,6 +10,7 @@ import { MenuService } from '../menu.service';
 })
 export class GroceryMenuComponent implements OnInit {
   menuItems: IMenu[] = [];
+  selectedItem?: IMenu;
 
   constructor(
     private menuService: MenuService
@@ -22,6 +23,10 @@ export class GroceryMenuComponent implements OnInit {
   private getMenuItems(): void {
     this.menuService.getMenuItems()
         .subscribe(menu => this.menuItems = menu)
+  }
+
+  public onSelectItem(item: IMenu): void {
+    this.selectedItem = item;
   }
 
 }
