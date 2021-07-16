@@ -1,0 +1,9 @@
+<h2>Menu Items</h2>
+<div class="items-container">
+  <div *ngFor="let item of menuItems">
+    <div class="items-container_item-wrapper"> <!-- Need to background color box with {{item.color}}-->
+      <p>{{item.id}}</p>
+      <p>{{item.name}}</p>
+    </div>
+  </div>
+</div>

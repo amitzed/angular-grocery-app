@@ -1,0 +1,25 @@
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // width: 80%;
+  // margin: auto;
+  text-align: center;
+
+  &_item-wrapper {
+    background: grey;
+    color: #fff;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    margin: 1em;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background: coral;
+      color: #000;
+      transform: scale(1.02);
+    }
+  }
+}
