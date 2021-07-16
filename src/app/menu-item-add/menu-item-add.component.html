@@ -1,0 +1,41 @@
+<div class="add-container">
+  <h3>Add Menu Item</h3>
+  <form
+  [formGroup]="menuItemForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div>
+    <p>
+      <label for="id">ID </label>
+      <input type="number" min="13" max="50" id="id" name="id" formControlName="id" required>
+    </p>
+
+    <p>
+      <label for="name">Name </label>
+      <input type="text" placeholder="Grocery Item" id="name" name="name" formControlName="name" required>
+    </p>
+    <p>
+      <label for="color">Color </label>
+      <select id="color" name="color" formControlName="color" required>
+        <option  disabled selected>Select Color:</option>
+        <option>violet</option>
+        <option>steelblue</option>
+        <option>slateblue</option>
+        <option>sienna</option>
+        <option>saddlebrown</option>
+        <option>royalblue</option>
+        <option>rebeccapurple</option>
+        <option>palevioletred</option>
+      </select>
+    </p>
+
+    <p>
+      <button type="reset" value="Reset">Clear Form</button>
+      <button type="submit">Submit</button>
+    </p>
+  </div>
+</form>
+</div>
+
+
+

@@ -21,9 +21,10 @@
     <button (click)="showEditOptions = !showEditOptions">Toggle Menu Edit Options</button>
     <div class="wrapper_edit-menu_components" *ngIf="showEditOptions">
       <app-menu-item-edit [item]="selectedItem"></app-menu-item-edit>
-      <div>Create New Menu Item</div>
+      <app-menu-item-add></app-menu-item-add>
     </div>
   </div>
 </div>
+
 
 

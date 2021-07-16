@@ -8,6 +8,7 @@ import { MENU } from './menu-db';
   providedIn: 'root'
 })
 export class MenuService {
+  menuItems: string[] = [];
 
   constructor() { }
 
@@ -16,4 +17,9 @@ export class MenuService {
 
     return menu;
   }
+
+  addMenuItem(menuItems: string) {
+    this.menuItems.push(menuItems)
+  }
+
 }

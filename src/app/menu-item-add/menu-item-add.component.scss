@@ -1,0 +1,13 @@
+.add-container {
+  h3 {
+    font-size: 1em;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select {
+    padding: 3px;
+    font-size: 1.1em;
+    text-transform: capitalize;
+  }
+}
