@@ -6,18 +6,5 @@
   nav {
     display: flex;
     justify-content: center;
-    button {
-      margin: 0 0.75em;
-      padding: 15px;
-      color: #000;
-      font-size: 1em;
-      cursor: pointer;
-      transition: all 0.3s linear;
-
-      &:hover {
-        background: red;
-        color: #fff;
-      }
-    }
   }
 }

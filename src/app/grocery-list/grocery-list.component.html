@@ -1,1 +1,23 @@
-<p>grocery-list works!</p>
+<h2>Grocery Cart List</h2>
+
+<div
+  *ngIf="listService.listItems.length"
+  class="list-container"
+>
+  <button
+    class="delete"
+    (click)="listService.deleteList()"
+  >
+    Delete List
+  </button>
+  <div
+    *ngFor="let item of listService.listItems"
+    class="list-container--item"
+  >
+    {{item}}
+  </div>
+</div>
+
+<div *ngIf="!listService.listItems.length">
+  <h3>Cart is empty.</h3>
+</div>

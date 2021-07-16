@@ -23,9 +23,11 @@
     transition: all 0.3s linear;
 
     &:hover {
-      background: coral;
+      // background: coral;
       color: #000;
+      font-weight: bold;
       transform: scale(1.02);
+      animation: backgroundColorPalette 7s linear infinite alternate;
     }
   }
 }

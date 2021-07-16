@@ -1,0 +1,13 @@
+.list-container {
+  &--item {
+    margin: 0.5em auto;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 0.3em 0;
+    height: 1.6em;
+    width: 50%;
+    border-radius: 4px;
+  }
+}

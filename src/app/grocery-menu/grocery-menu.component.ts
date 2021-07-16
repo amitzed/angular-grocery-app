@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IMenu } from '../interfaces/menu-items';
 
 import { MenuService } from '../menu.service';
+import { ListService } from '../list.service';
 
 @Component({
   selector: 'app-grocery-menu',
@@ -13,7 +14,8 @@ export class GroceryMenuComponent implements OnInit {
   selectedItem?: IMenu;
 
   constructor(
-    private menuService: MenuService
+    private menuService: MenuService,
+    private listService: ListService
   ) { }
 
   ngOnInit(): void {
@@ -27,6 +29,7 @@ export class GroceryMenuComponent implements OnInit {
 
   public onSelectItem(item: IMenu): void {
     this.selectedItem = item;
+    this.listService.addItem(`ID: ${item.id} -- ITEM: ${item.name}`)
   }
 
 }
