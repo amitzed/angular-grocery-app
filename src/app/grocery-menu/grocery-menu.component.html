@@ -5,10 +5,14 @@
     (click)="onSelectItem(item)"
     [class.itemSelected]="item === selectedItem"
   >
-    <div class="items-container_item-wrapper"> <!-- Need to background color box with {{item.color}}-->
+
+    <div
+    class="items-container_item-wrapper"
+    [ngStyle]="{'background': getColor(item)}"
+    >
       <p>ID: {{item.id}}</p>
       <p>{{item.name}}</p>
     </div>
+
   </div>
 </div>
-<app-grocery-list></app-grocery-list>
