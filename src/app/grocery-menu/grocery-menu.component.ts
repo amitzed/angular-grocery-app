@@ -32,46 +32,4 @@ export class GroceryMenuComponent implements OnInit {
     this.listService.addItem(`ID: ${item.id} -- ITEM: ${item.name}`)
   }
 
-  public getColor(item: IMenu) {
-    switch (item.color) {
-      case 'blue':
-        return 'blue';
-        break;
-      case 'cadetblue':
-        return 'cadetblue';
-        break;
-      case 'cornflowerblue':
-        return 'cornflowerblue';
-        break;
-      case 'gold':
-        return 'gold';
-        break;
-      case 'chartreuse':
-        return 'chartreuse';
-        break;
-      case 'chocolate':
-        return 'chocolate';
-      case 'darkgreen':
-        return 'darkgreen';
-        break;
-      case 'darkolivegreen':
-        return 'darkolivegreen';
-        break;
-      case 'dodgerblue':
-        return 'dodgerblue';
-        break;
-      case 'indigo':
-        return 'indigo';
-        break;
-      case 'light coral':
-        return 'light coral';
-        break;
-      case 'maroon':
-        return 'maroon';
-        break;
-      default:
-        return 'lightgreen'
-    }
-  }
-
 }
