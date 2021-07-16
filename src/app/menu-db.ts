@@ -54,7 +54,7 @@ export const MENU: IMenu[] = [
   {
     id: 11,
     name: 'salmon',
-    color: 'light coral'
+    color: 'lightcoral'
   },
   {
     id: 12,

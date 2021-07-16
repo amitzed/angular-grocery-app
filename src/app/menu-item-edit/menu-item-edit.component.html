@@ -1,0 +1,12 @@
+<div class="edit-container" *ngIf="item">
+  <div>
+    <label for="name">Edit Menu Item Name</label>
+    <br>
+    <input
+      id="name"
+      placeholder="Item Name"
+      type="text"
+      [(ngModel)]="item.name"
+    >
+  </div>
+</div>

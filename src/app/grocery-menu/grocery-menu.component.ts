@@ -12,6 +12,8 @@ import { ListService } from '../list.service';
 export class GroceryMenuComponent implements OnInit {
   menuItems: IMenu[] = [];
   selectedItem?: IMenu;
+  isSelected: boolean = false;
+  showEditOptions: boolean = false;
 
   constructor(
     private menuService: MenuService,
@@ -29,7 +31,8 @@ export class GroceryMenuComponent implements OnInit {
 
   public onSelectItem(item: IMenu): void {
     this.selectedItem = item;
-    this.listService.addItem(`ID: ${item.id} -- ITEM: ${item.name}`)
+    this.listService.addItem(`ID: ${item.id} -- ITEM: ${item.name}`);
+    this.isSelected = true;
   }
 
 }

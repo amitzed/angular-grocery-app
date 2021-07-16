@@ -1,0 +1,13 @@
+.edit-container {
+  label {
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.1em;
+    text-transform: capitalize;
+  }
+}

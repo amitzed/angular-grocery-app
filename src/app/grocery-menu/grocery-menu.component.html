@@ -1,19 +1,29 @@
 <h2>Menu Items</h2>
-<div class="items-container">
-  <div
-    *ngFor="let item of menuItems"
-    (click)="onSelectItem(item)"
-    [class.itemSelected]="item === selectedItem"
-  >
-
+<div class="wrapper">
+  <div class="wrapper_items-container">
     <div
-    class="items-container_item-wrapper"
-    [class.lightBG]="item.color === 'gold' || item.color === 'chartreuse'"
-    [ngStyle]="{'background': item.color}"
+      *ngFor="let item of menuItems"
+      (click)="onSelectItem(item)"
+      [class.itemSelected]="item === selectedItem"
     >
-      <p>ID: {{item.id}}</p>
-      <p>{{item.name}}</p>
+      <div
+      class="wrapper_items-container_item-wrapper"
+      [class.lightBG]="item.color === 'gold' || item.color === 'chartreuse'"
+      [ngStyle]="{'background': item.color}"
+      >
+        <p>ID: {{item.id}}</p>
+        <p>{{item.name}}</p>
+      </div>
     </div>
+  </div>
 
+  <div class="wrapper_edit-menu" *ngIf="isSelected">
+    <button (click)="showEditOptions = !showEditOptions">Toggle Menu Edit Options</button>
+    <div class="wrapper_edit-menu_components" *ngIf="showEditOptions">
+      <app-menu-item-edit [item]="selectedItem"></app-menu-item-edit>
+      <div>Create New Menu Item</div>
+    </div>
   </div>
 </div>
+
+

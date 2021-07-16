@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { GroceryMenuComponent } from './grocery-menu/grocery-menu.component';
 import { GroceryListComponent } from './grocery-list/grocery-list.component';
 import { FormsModule } from '@angular/forms';
+import { MenuItemEditComponent } from './menu-item-edit/menu-item-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GroceryMenuComponent,
-    GroceryListComponent
+    GroceryListComponent,
+    MenuItemEditComponent
   ],
   imports: [
     BrowserModule,
