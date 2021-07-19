@@ -10,4 +10,13 @@
     font-size: 1.1em;
     text-transform: capitalize;
   }
+
+  .isDisabled {
+    cursor: not-allowed;
+
+    &:hover {
+      background: none;
+      color: #778899;
+    }
+  }
 }

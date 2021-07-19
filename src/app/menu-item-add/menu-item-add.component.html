@@ -1,5 +1,6 @@
 <div class="add-container">
   <h3>Add Menu Item</h3>
+
   <form
   [formGroup]="menuItemForm"
   (ngSubmit)="onSubmit()"
@@ -7,17 +8,17 @@
   <div>
     <p>
       <label for="id">ID </label>
-      <input type="number" min="13" max="50" id="id" name="id" formControlName="id" required>
+      <input type="number" min="13" max="50" id="id" name="id" formControlName="id">
     </p>
 
     <p>
       <label for="name">Name </label>
-      <input type="text" placeholder="Grocery Item" id="name" name="name" formControlName="name" required>
+      <input type="text" placeholder="Grocery Item" id="name" name="name" formControlName="name">
     </p>
     <p>
       <label for="color">Color </label>
-      <select id="color" name="color" formControlName="color" required>
-        <option  disabled selected>Select Color:</option>
+      <select id="color" name="color" formControlName="color">
+        <option disabled selected>Select Color:</option>
         <option>violet</option>
         <option>steelblue</option>
         <option>slateblue</option>
@@ -31,7 +32,11 @@
 
     <p>
       <button type="reset" value="Reset">Clear Form</button>
-      <button type="submit">Submit</button>
+      <button
+        (click)="onSubmit()"
+        [disabled]="!menuItemForm.valid"
+        [class.isDisabled]="!menuItemForm.valid"
+      >Submit</button>
     </p>
   </div>
 </form>
