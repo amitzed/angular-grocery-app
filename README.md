@@ -2,6 +2,10 @@
 
 ## Angular app utilizing interfaces, components, services, and navigation.
 
+https://user-images.githubusercontent.com/39567704/126163558-4076f41a-804c-4fc9-bfec-883bd9a1c54a.mp4
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
 
 ## Development server
