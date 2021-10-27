@@ -1,4 +1,4 @@
-# GroceryStore
+# Grocery Store
 
 ## Angular app utilizing interfaces, components, services, navigation, and Reactive Forms.
 
